@@ -1,0 +1,289 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021 - Flatpak) (preloaded format=pdflatex 2021.10.11)  29 DEC 2021 17:49
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**rapport.tex
+(./rapport.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18>
+(/app/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(/app/texlive/texmf-dist/tex/latex/base/size12.clo
+File: size12.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+)
+(/app/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/app/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/app/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+
+(/app/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/app/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+
+(/app/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen139
+\Gin@req@width=\dimen140
+)
+(/app/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+(/app/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count187
+\lst@gtempboxa=\box47
+\lst@token=\toks16
+\lst@length=\count188
+\lst@currlwidth=\dimen141
+\lst@column=\count189
+\lst@pos=\count190
+\lst@lostspace=\dimen142
+\lst@width=\dimen143
+\lst@newlines=\count191
+\lst@lineno=\count192
+\lst@maxwidth=\dimen144
+
+(/app/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2020/03/24 1.8d (Carsten Heinz)
+\c@lstnumber=\count193
+\lst@skipnumbers=\count194
+\lst@framebox=\box48
+)
+(/app/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2020/03/24 1.8d listings configuration
+))
+Package: listings 2020/03/24 1.8d (Carsten Heinz)
+\@indexfile=\write3
+\openout3 = `rapport.idx'.
+
+
+Writing index file rapport.idx
+(/app/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box49
+)
+(./rapport.aux)
+\openout1 = `rapport.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+ (/app/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count196
+\scratchdimen=\dimen145
+\scratchbox=\box50
+\nofMPsegments=\count197
+\nofMParguments=\count198
+\everyMPshowfont=\toks17
+\MPscratchCnt=\count199
+\MPscratchDim=\dimen146
+\MPnumerator=\count266
+\makeMPintoPDFobject=\count267
+\everyMPtoPDFconversion=\toks18
+) (/app/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/app/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@lstlisting=\count268
+<~/templates//logopopo.png, id=1, 1204.5pt x 766.865pt>
+File: ~/templates//logopopo.png Graphic file (type png)
+<use ~/templates//logopopo.png>
+Package pdftex.def Info: ~/templates//logopopo.png  used on input line 10.
+(pdftex.def)             Requested size: 113.81102pt x 72.45508pt.
+<~/templates//univlille.png, id=3, 389.455pt x 130.4875pt>
+File: ~/templates//univlille.png Graphic file (type png)
+<use ~/templates//univlille.png>
+Package pdftex.def Info: ~/templates//univlille.png  used on input line 12.
+(pdftex.def)             Requested size: 170.71652pt x 57.19763pt.
+ [1
+
+{/app/texlive/texmf-dist/fonts/map/pdftex/updmap/pdftex.map} </home/maxence/tem
+plates//logopopo.png> </home/maxence/templates//univlille.png>] (./rapport.toc)
+\tf@toc=\write4
+\openout4 = `rapport.toc'.
+
+ [1]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 40.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 40.
+<../images//fig1.png, id=16, 1027.84pt x 667.49374pt>
+File: ../images//fig1.png Graphic file (type png)
+<use ../images//fig1.png>
+Package pdftex.def Info: ../images//fig1.png  used on input line 52.
+(pdftex.def)             Requested size: 284.52756pt x 184.77847pt.
+
+[2 <../images//fig1.png>]
+<../images//fig2.PNG, id=27, 1027.84pt x 668.4975pt>
+File: ../images//fig2.PNG Graphic file (type png)
+<use ../images//fig2.PNG>
+Package pdftex.def Info: ../images//fig2.PNG  used on input line 60.
+(pdftex.def)             Requested size: 341.43306pt x 222.0635pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 64--65
+
+ []
+
+[3 <../images//fig2.PNG>]
+<../images//fig3.png, id=32, 509.905pt x 225.84375pt>
+File: ../images//fig3.png Graphic file (type png)
+<use ../images//fig3.png>
+Package pdftex.def Info: ../images//fig3.png  used on input line 69.
+(pdftex.def)             Requested size: 341.43306pt x 151.23181pt.
+<../images//fig4.png, id=33, 513.92pt x 259.97125pt>
+File: ../images//fig4.png Graphic file (type png)
+<use ../images//fig4.png>
+Package pdftex.def Info: ../images//fig4.png  used on input line 70.
+(pdftex.def)             Requested size: 341.43306pt x 172.72003pt.
+
+Overfull \hbox (51.20375pt too wide) in paragraph at lines 74--75
+[]\OT1/cmr/m/n/12 Nous avons fait la trans-form^^See avec deux p^^Seriodes et u
+ne fr^^Sequence d'^^Sechantillonnage
+ []
+
+[4 <../images//fig3.png> <../images//fig4.png>]
+<../images//fig5.PNG, id=38, 1027.84pt x 668.4975pt>
+File: ../images//fig5.PNG Graphic file (type png)
+<use ../images//fig5.PNG>
+Package pdftex.def Info: ../images//fig5.PNG  used on input line 95.
+(pdftex.def)             Requested size: 284.52756pt x 185.05632pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 98--99
+
+ []
+
+<../images//fig6.PNG, id=39, 1027.84pt x 664.4825pt>
+File: ../images//fig6.PNG Graphic file (type png)
+<use ../images//fig6.PNG>
+Package pdftex.def Info: ../images//fig6.PNG  used on input line 103.
+(pdftex.def)             Requested size: 284.52756pt x 183.94487pt.
+
+Overfull \hbox (21.3374pt too wide) in paragraph at lines 100--107
+[]\OT1/cmr/m/n/12 Nous al-lons main-tenant cal-culer la trans-form^^See de Four
+ier avec 16 ^^Sechantillons.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 100--107
+
+ []
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[5 <../images//fig5.PNG>] [6 <../images//fig6.PNG>]
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 113--114
+
+ []
+
+<../images//fig7.PNG, id=49, 1027.84pt x 668.4975pt>
+File: ../images//fig7.PNG Graphic file (type png)
+<use ../images//fig7.PNG>
+Package pdftex.def Info: ../images//fig7.PNG  used on input line 122.
+(pdftex.def)             Requested size: 284.52756pt x 185.05632pt.
+[7 <../images//fig7.PNG>]
+<../images//fig8.PNG, id=55, 1027.84pt x 666.49pt>
+File: ../images//fig8.PNG Graphic file (type png)
+<use ../images//fig8.PNG>
+Package pdftex.def Info: ../images//fig8.PNG  used on input line 129.
+(pdftex.def)             Requested size: 284.52756pt x 184.50061pt.
+<../images//fig9.PNG, id=56, 1027.84pt x 663.47874pt>
+File: ../images//fig9.PNG Graphic file (type png)
+<use ../images//fig9.PNG>
+Package pdftex.def Info: ../images//fig9.PNG  used on input line 135.
+(pdftex.def)             Requested size: 284.52756pt x 183.667pt.
+ [8 <../images//fig8.PNG> <../images//fig9.PNG>]
+[9]
+<../images//fig10.PNG, id=65, 1027.84pt x 666.49pt>
+File: ../images//fig10.PNG Graphic file (type png)
+<use ../images//fig10.PNG>
+Package pdftex.def Info: ../images//fig10.PNG  used on input line 156.
+(pdftex.def)             Requested size: 284.52756pt x 184.50061pt.
+
+Overfull \hbox (4.79173pt too wide) in paragraph at lines 159--160
+ [] \OT1/cmr/m/n/12 Afin de retrou-ver la forme du si-nus car-di-nal, nous de-v
+ons avoir une fr^^Sequence
+ []
+
+[10 <../images//fig10.PNG>]
+<../images//fig11.PNG, id=70, 1027.84pt x 667.49374pt>
+File: ../images//fig11.PNG Graphic file (type png)
+<use ../images//fig11.PNG>
+Package pdftex.def Info: ../images//fig11.PNG  used on input line 164.
+(pdftex.def)             Requested size: 284.52756pt x 184.77847pt.
+<../images//fig12.PNG, id=71, 1027.84pt x 667.49374pt>
+File: ../images//fig12.PNG Graphic file (type png)
+<use ../images//fig12.PNG>
+Package pdftex.def Info: ../images//fig12.PNG  used on input line 171.
+(pdftex.def)             Requested size: 284.52756pt x 184.77847pt.
+ [11 <../images//fig11.PNG> <../images//fig12.PNG>]
+(./rapport.aux) ) 
+Here is how much of TeX's memory you used:
+ 2656 strings out of 478994
+ 39197 string characters out of 5859688
+ 329254 words of memory out of 5000000
+ 20140 multiletter control sequences out of 15000+600000
+ 407079 words of font info for 39 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 68i,6n,74p,474b,263s stack positions out of 5000i,500n,10000p,200000b,80000s
+</app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12
+.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></app/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></app/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></app/texlive/texmf-dist/fonts/ty
+pe1/public/amsfonts/cm/cmr12.pfb></app/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></app/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></app/t
+exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb>
+Output written on rapport.pdf (12 pages, 262247 bytes).
+PDF statistics:
+ 107 PDF objects out of 1000 (max. 8388607)
+ 56 compressed objects within 1 object stream
+ 0 named destinations out of 1000 (max. 500000)
+ 71 words of extra memory for PDF output out of 10000 (max. 10000000)
+
