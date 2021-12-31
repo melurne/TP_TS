@@ -25,137 +25,117 @@
 	\end{titlepage}
 	
 	\tableofcontents
-	\newpage
 	
 	\section{Introduction}
+		L’objectif de ce tp est d’identifier les problèmes de l’analyse spectrales hautes fréquences. Il sera divisé en 3 parties. D’abord, nous identifierons les fonctions de l’analyseur de spectres à balayage à partir de l’analyse de signaux sinusoïdaux puis nous rechercherons le spectre d’impulsions récurrentes que l’on comparera au spectre évalué par la série de Fourier. Pour finir, nous analyserons le spectre radio-fréquence entre 100 kHz et 350 MHz.
 	
-	La corrélation numérique est utilisée lorsque l’on recherche la relation entre deux processus. L’objectif de ce TP est de d’utiliser deux méthodes de corrélation numériques pour traiter quelques applications. Tout d’abord, nous allons utiliser l’inter-corrélation sur deux signaux simples puis nous allons utiliser l’auto-corrélation pour obtenir la réponse impulsionnelle d’un système.
-	
-	\section{Inter-corrélation numérique}
-	
-	Pour l’inter-corrélation, nous allons travailler avec deux signaux sinus. Ces deux sinus auront même fréquence, même amplitude mais l’un sera déphasé par rapport à l’autre.
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=13cm]{fig1.png}
-		\caption{Préparation}
-	\end{figure}
-	
-	En théorie, nous avons la phase à l’origine $\phi_{0}$ qui n’a aucune influence sur le résultat de la corrélation des deux signaux. Cependant le déphasage du deuxième signal $\phi$ à une influence et devrait apparaître sur le signal de sortie.\\
-	
-	Nous allons donc vérifier ces observations sur le logiciel Easy Curve.\\
-	
-	Nous choisissons deux sinus ayant une fréquence de 100 Hz, une amplitude de 1 Volt et le deuxième signal est déphasé de 45°. Nous avons d’abord essayé de discrétiser ces signaux avec une fréquence d'échantillonnage de 1000 Hz et de 16 échantillons.\\
-	
-	Nous obtenons les signaux ci-dessous.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig2.png}
-		\caption{Signaux 1 et 2}
-	\end{figure}
-
-	Nous obtenons la corrélation suivante.
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig3.png}
-		\caption{Correlation de 1 et 2}
-	\end{figure}
-
-	Ce n’est pas le résultat attendu, la fréquence d'échantillonnage est trop faible.
-	Nous avons ensuite augmenté le nombre d’échantillons à 128 et la fréquence d'échantillonnage à 12800 Hz. Nous obtenons les signaux ci-dessous.
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig4.png}
-		\caption{Signaux 1 et 2 à haute fréquence d'echantillonage}
-	\end{figure}
-
-	Une fois les deux signaux corrélés, nous obtenons le signal suivant.
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig5.png}
-		\caption{Correlation de 1 et 2}
-	\end{figure}
-
-	Ce résultat en bien en accord avec la théorie, nous avons bien une amplitude de 0.5V soit la moitié de l’amplitude des signaux de départ. Nous retrouvons aussi le déphasage de 45° du deuxième signal. Ainsi la fréquence d'échantillonnage nous permet de discrétiser correctement notre sinus pour être reconnu comme tel et plus nous avons un nombre d’échantillons importants plus le logiciel sera précis sur la corrélation et le signal de sortie sera “lissé”.
-	
-	\section{Obtention de la réponse impulsionnelle d’un système}
-	
-	\paragraph{}
-	Un générateur à bruit blanc délivre un signal dont le spectre comporte des raies d’amplitude unitaire à toutes les fréquences alors que le générateur de bruit rose comporte des raies d’amplitude unitaire jusqu’à une certaine fréquence. Il suffit donc de prendre une fréquence maximale de bruit assez grande par rapport à la fréquence de coupure du système car au dessus de cette fréquence la réponse impulsionnelle du système sera nulle.
-	\paragraph{}
-	La densité spectrale de puissance peut se calculer en faisant la transformée de Fourier de l’autocorrélation d’un signal. La fonction d’autocorrélation du bruit nous est donnée dans le sujet. La transformée de Fourier est une opération linéaire, nous pouvons donc décomposer la fonction en une somme de deux signaux simples.
-	
-	Nous avons donc la constante négative $-\frac{A^{2}}{L}$ de TF un pic de Dirac d’amplitude $-\frac{A^{2}}{L}$ Nous avons aussi un triangle de formule $\frac{(L+1)A^{2}}{L}$ et donc de transformée de Fourier :
-	$$ \frac{(L+1)A^{2}}{L}*\theta*sin^{2}(\pi f \theta) $$
-	La densité spectrale de puissance vaut donc :  
-	$$ S(f)= \frac{(L+1)A^{2}}{L}*\theta*sin^{2}(\pi f \theta) - \frac{A^{2}}{L}*\delta(f)$$
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=9cm]{fig6.png}
-		\caption{Allure de la DSP}
-	\end{figure}
-
-	Nous générons maintenant un bruit rose à l’aide du logiciel avec une fréquence d'échantillonnage de 300 Hz et n=6.\\
-	
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig7.png}
-		\caption{Bruit}
-	\end{figure}
-
-	Nous avons fait l’autocorrélation pour 3 bruits rose différents.
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=10cm]{fig8.png}
-		\caption{f=10hz, n=3 et A=1}
-	\end{figure}
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=11cm]{fig9.png}
-		\caption{f=300 hz, n=6 et A=1}
-	\end{figure}
-\newpage
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=11cm]{fig10.png}
-		\caption{f=10 hz, n=3 et A=3}
-	\end{figure}
-	\begin{figure}[h]
-		\centering
-		\includegraphics[width=12cm]{fig11.png}
-		\caption{f=10 Hz, n=5 et A=1}
-	\end{figure}
 	\newpage
 	
+	\section{Travail préparatoire}
 	
-	\paragraph{}
-	Ainsi, nous avons constaté que lorsque le nombre de bascules augmentent ici n, $\theta$ diminue tandis que L et T augmentent. En effet, plus nous augmentons n, plus le logiciel est précis et plus nous nous rapprochons d’un pic de Dirac. Cependant, il ne faut pas prendre un nombre de bascules trop grand sinon le logiciel plante. Lorsque nous augmentons la fréquence d'échantillonnage, l'échelle change donc diminue aussi la période de l’horloge $\theta$.
+	\subsection{Signal sinusoidal}
 	
-	\section{Réponse impulsionnelle circuit RC}
+		D’après le cours, la transformée de Fourier d’un sinus est une impulsion de Dirac d’amplitude $\frac{A}{2}$ à la +/-fréquence du sinus.
+		$$ F(sin(2 \pi f t)) = \frac{1}{2j}(\delta(f-f_{0}) - \delta(f+f_{0})) $$
+		Le spectre d’amplitude étant le module de la transformée de Fourier en fonction de la fréquence nous obtenons le spectre suivant : 
+		
+		\begin{figure}[h]
+			\centering
+			\includegraphics[width=10cm]{fig1.png}
+			\caption{Allure de la transformée de Fourier}
+		\end{figure}
 	
-	On va utiliser notre générateur de bruit pour déterminer la réponse inpultionnelle d'un filtre RC, pour cela on va utiliser un correlateur. On peut montrer que si l'entrée du filtre est un bruit blanc, alors la correlation de cette entrée et de la sortie du filtre donne la réponse impultionnelle de ce filtre.\\
-	$$ s(t) = h(t)*e(t) $$
-	$$ alors: C_{es} = s(t)*e(-t)$$
-	$$ donc: C_{es} = h(t)*e(t)*e(-t) $$
-	$$ or: e(t)*e(-t) = C_{ee} $$
-	$$ Comme: C_{ee}=\delta(t), alors: C_{es} = h(t) $$
+		La porte est de largeur $\tau$, de période $T_{r}$  et d’amplitude A.
+		Pour déterminer le spectre d’amplitude d’un signal périodique il faut passer par la série de Fourier.\\
+		D’après les résultats des travaux dirigés, les coefficients de la série de Fourier sont :
+		$$ A_{0} = \frac{A\tau}{T_{r}} $$
+		$$ A_{n} = \frac{4 A}{T_{r}}\int_{0}^{\tau / 2} cos(n \omega t) dt = \frac{2 A \tau}{T_{r}} sinc(n \pi \frac{\tau}{T_{r}}) $$
+		
+		La fonction est pair donc les coefficients $B_{n}$ sont nuls. 
+
+		Nous avons donc la série de fourier suivante : 
+		
+		$$ S(t) = \frac{\tau A}{T_{r}} + \sum_{1}^{+ \infty} \frac{2 A \tau}{T_{r}} sinc(n \pi \frac{\tau}{T_{r}}).cos(\frac{n 2 \pi t}{T_{r}}) $$
+		
+		$$ H_{1} = \frac{2 A}{\pi} sin(\frac{\pi \tau}{T_{r}}) $$
+		$$ H_{2} = \frac{A}{\pi} sin(\frac{2 \pi \tau}{T_{r}}) $$
+		$$ H_{3} = \frac{2A}{3 \pi} sin(\frac{3 \pi \tau}{T_{r}}) $$
+		$$ H_{4} = \frac{A}{2 \pi} sin(\frac{4 \pi \tau}{T_{r}}) $$
+		$$ H_{5} = \frac{2 A}{5 \pi} sin(\frac{5 \pi \tau}{T_{r}}) $$
 	
-	On a donc réalisé la correlation de e et s et on a réalisé une transformation pour obtenir le diagramme de baude du filtre.
+	\section{Analyse de signaux harmoniques}
+	
+	Nous utilisons un analyseur de la marque AGILENT dont la bande spectrale pouvant être explorée est comprise entre 9 kHz et 1.5 MHz.
+	
+	\subsection{Réponse du filtre d'analyse}
+	
+	La touche CENTER FREQUENCY permet de régler la fréquence observée au milieu de l’écran.
+	La touche SPAN permet de modifier la largeur de la fenêtre d’affichage.\\
+	Si l’on veut mieux voir un pic ou au contraire l’atténuer, nous pouvons changer la valeur du haut de l’écran avec REF LEVEL. Ce paramètre est géré par le détecteur d’amplitude. \\
+	La touche ATTÉNUATION permet d’atténuer le signal pour éviter les saturations de l’appareil, ce paramètre agit avant l’observation du signal, c’est donc l’atténuateur qui se charge de cette fonctionnalité.\\
+	Pour modifier la largeur de la bande passante du filtre, nous devons utiliser la touche BW/Avg et modifier la valeur, comme son nom l’indique la largeur de la bande passante est gérée par le filtre.\\
+	Enfin, la touche SWEEP permet de gérer le taux de rafraîchissement des données affichées à l’écran, ce paramètre est géré via le générateur de rampe de l’appareil.
+	
+	\subsection{Spectre d'un signal harmonique}
+	
+	Le spectre théorique d’un signal sinusoïdal est celui de la figure 1 décrit dans la préparation.\\
+	En injectant avec le générateur interne, un signal de 50 MHz. Nous obtenons le résultat suivant :
 	
 	\begin{figure}[h]
 		\centering
-		\includegraphics[width=12cm]{fig12.png}
-		\caption{Diagramme de baude du filtre}
+		\includegraphics[width=8cm]{fig2.jpg}
+		\caption{Spectre du générateur interne}
 	\end{figure}
-
-	On avait choisi notre filtre de façon à avoir une fréquence de coupure à 16Hz, on peut lire sur le diagramme de baude que le gain passe à $Gain_{max}-3dB$ entre les échantillons à 14 et 18Hz, ce qui correspond à la fréquence de coupure attendue.
 	
-	\section{Conclusion}
-
-	On a vu au cours de ce TP comment il est possible de simuler les auto-correlations de différents signaux. On a également vu comment on peut déterminer la réponse impultionnelle d'un filtre quelconque.\\
-
+	Ce résultat est cohérent car avec un “span” de 20 MHz, nous ne pouvons observer qu’un seul des deux pics du spectre.\\
+	C’est à partir d’une bande passante de 30 kHz,que nous pouvons considérer notre pic comme un pic de Dirac. \\
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=8cm]{fig3.jpg}
+		\caption{Spectre du générateur interne}
+	\end{figure}
+	
+	Après avoir utilisé le menu MARKER, nous voyons que l’amplitude du pic vaut -26.7 dBm. Ce qui correspond bien aux données du constructeur. En modifiant, l'atténuation nous voyons que plus l’atténuation est importante, plus l’amplitude du bruit est importante aussi. Le niveau de référence est modifié, cela impacte donc le bruit interne de l’appareil. Si l'atténuation est trop forte, notre signal est noyé dans le bruit.
+	
+	\subsection{Spectre d'un signal modulé en amplitude}
+	
+	Voici le signal que nous injectons à l'oscillateur. L’amplitude crête à crête est avec 2 V et la fréquence est de 5 MHz.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=6.5cm]{fig4.jpg}
+		\includegraphics[width=6.5cm]{fig5.jpg}
+		\caption{Spectre de la porteuse}
+	\end{figure}
+	
+	Une fois les réglages faits, nous observons le spectre ci-dessus. Si nous augmentons le “span” nous observons des harmoniques aux multiples de la fréquence du signal. Nous pouvons donc conclure que le spectre théorique est différent du spectre pratique, le signal observé n’est pas parfait. Cependant comparé à la puissance du fondamental, la puissance des harmoniques est faible. 
+	
+	Nous mesurons 9.3 dBm pour l’amplitude du pic ce qui équivaut à une tension efficace de 652 mV. Nous avons une tension efficace valant 0.652 V donc la tension maximale vaut 0.92 V. En théorie, nous devrions mesurer 1.96/2 = 0.98 V. Les deux résultats sont assez proches, nous supposons que les pertes sont dues aux appareils.
+	
+	En ce qui concerne l’impédance de l’analyseur de spectre, la valeur change lorsque nous changeons la valeur de la résistance interne. L’appareil prends donc d’abord en compte la puissance du signal et ensuite il la calcule en fonction de la valeur de résistance choisie.\\ 
+	
+	Nous pouvons schématiser l’influence des résistances avec le schéma suivant.
+	
+	Nous avons Rg la résistance du générateur et Ras la résistance de l’analyseur de spectre, $R_{as} = R_{q} = 50\Omega$ et $ R_{0} = 50 M\Omega $ la résistance de l'oscillateur.
+	Nous avons donc :
+	$$ Z_{eq} = \frac{R_{as}R_{0}}{R_{as} + R_{0}} = R_{as} $$ 
+	Le signal sinusoïdal valeur max $V_{1} = 1 V$\\
+	$$ V_{2 max} = \frac{V_{1 max} R_{as}}{R_{as} + R_{0}} = \frac{V_{1 max}}{2} = 0.5V $$
+	Nous avons donc $$ V_{2 eff} = \frac{0.5}{\sqrt{2}} = 0.35V $$
+	
+	Nous allons maintenant injecter un signal modulé AM dans l’analyseur de spectre. La porteuse est reglée à 5 Mhz et le signal à transmettre est de 2kHz et a une amplitude crête de 100 mV.
+	
+	\begin{figure}[h]
+		\centering
+		\includegraphics[width=11cm]{fig6.jpg}
+		\caption{Spectre signal modulé}
+	\end{figure}
+	
+	Nous avons un span de 10 kHz et 10 carreaux affichés à l’écran donc 1 carreaux à une largeur d’1 kHz, les pics sont donc bien espacés de 2 kHz, c’est le résultat que nous attendons. 
+	Ce spectre est bien le spectre attendu.\\
+	
+	Comparons maintenant leur amplitude avec la théorie.
+	
+	
 \end{document}
